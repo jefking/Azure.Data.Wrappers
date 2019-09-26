@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Description>Azure.Data.Wrappers Class Library</Description>
     <AssemblyTitle>Azure.Data.Wrappers</AssemblyTitle>
-    <VersionPrefix>3.0.0</VersionPrefix>
+    <VersionPrefix>3.1.0</VersionPrefix>
     <Authors>Jef King,Christopher Scott</Authors>
-    <TargetFrameworks>netcoreapp1.0;netstandard1.3;net45;net451;net452;net46;net461;net462</TargetFrameworks>
+    <TargetFrameworks>netcoreapp1.0;netstandard1.3</TargetFrameworks>
     <AssemblyName>Azure.Data.Wrappers</AssemblyName>
     <PackageId>Azure.Data.Wrappers</PackageId>
     <PackageTags>King.Azure;Azure;Storage;Mock;Mockable;Simple;Data;Table;Storage;File;Share;File-Share;Queue;Queuing;Blob;Query;dependency;injection;dependency-injection;Cloud;Table-Storage;Windows-Azure;Windows;dotNet;CSharp;Mocking;Data-Table;Blob;Json;WindowsAzure.Storage;.NetCore;DNX,storage-account,blobs,binary,text,data,event-store</PackageTags>
@@ -15,8 +15,6 @@ Added ConfigureAwait(false) to all awaited methods.  https://msdn.microsoft.com/
     <PackageIconUrl>https://raw.githubusercontent.com/Microsoft/Azure.Data.Wrappers/master/icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Microsoft/Azure.Data.Wrappers</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/Microsoft/Azure.Data.Wrappers/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">$(PackageTargetFallback);portable-net451+win8</PackageTargetFallback>
-    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.3' ">$(PackageTargetFallback);portable-net451+win8</PackageTargetFallback>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -30,7 +28,7 @@ Added ConfigureAwait(false) to all awaited methods.  https://msdn.microsoft.com/
     <RepositoryUrl>https://github.com/Microsoft/Azure.Data.Wrappers</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <RootNamespace>Azure.Data.Wrappers</RootNamespace>
-    <Version>3.0.10</Version>
+    <Version>3.1.0</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
@@ -41,37 +39,7 @@ Added ConfigureAwait(false) to all awaited methods.  https://msdn.microsoft.com/
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="WindowsAzure.Storage" Version="8.1.4" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
   </ItemGroup>
 
 </Project>
